@@ -1,0 +1,18 @@
+﻿@model BookEventDTO
+@{
+    ViewData["Title"] = "DeleteEvent";
+}
+
+<h1>DeleteEvent</h1>
+
+<div class="row">
+    <form method="post" asp-action="DeleteEvent">
+        <div class="col-sm-8 col-md-4 form-group">
+            <label asp-for="Id"></label>
+            <input asp-for="Id" class="form-control" />
+            <button type="submit" class="btn btn-dark p-1">Delete Event</button>
+        </div>
+    </form>
+
+</div>
+

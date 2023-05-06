@@ -1,0 +1,21 @@
+﻿@model IEnumerable<BookEventEntity>
+@{
+    ViewData["Title"] = "Events Invitations";
+}
+
+
+
+@if (ViewBag.AreInvited == true && Model != null && Model.Any())
+{
+    <h1>Events Invited To</h1>
+    <div class="list-group">
+        @foreach (var item in Model)
+        {
+            <a asp-controller="BookEvent" asp-action="EventDetails" asp-route-id="@item.Id" class="list-group-item list-group-item-action">@item.Title</a>
+        }
+    </div>
+}
+else
+{
+    <h1 class="display-4">Oops! It looks like no one invited you to an event yet.</h1>
+}

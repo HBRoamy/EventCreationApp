@@ -1,0 +1,75 @@
+﻿@model BookEventModel
+@{
+    ViewData["Title"] = "CreateEvent";
+}
+
+<h1>Create An Event</h1>
+
+<div class="row">
+    <div class="col-md-6 col-sm-12">
+        <form method="post" asp-action="CreateEvent">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+         
+            <div class="form-group">
+                <label asp-for="Title"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date"></label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Location"></label>
+                <input asp-for="Location" class="form-control" />
+                <span asp-validation-for="Location" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StartTime"></label>
+                <input asp-for="StartTime" class="form-control"> @*probably wrong*@
+                <span asp-validation-for="StartTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="IsPrivateEvent" />
+                <label asp-for="IsPrivateEvent"></label>
+                <span asp-validation-for="IsPrivateEvent" class="text-danger"></span> @*no validation applied tho*@
+            </div>
+            <div class="form-group">
+                <label asp-for="DurationInHours"></label>
+                <input asp-for="DurationInHours" class="form-control" placeholder="Minimum 1 Hr, Max 4 Hr (Default 1 Hr)"/>
+                <span asp-validation-for="DurationInHours" class="text-danger"></span> @*no validation applied tho*@
+            </div>
+            <div class="form-group">
+                <label asp-for="Description"></label>
+                <textarea asp-for="Description" class="form-control"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span> @*no validation applied tho*@
+            </div>
+            <div class="form-group">
+                <label asp-for="OtherDetails"></label>
+                <textarea asp-for="OtherDetails" class="form-control"></textarea>
+                <span asp-validation-for="OtherDetails" class="text-danger"></span> @*no validation applied tho*@
+            </div>
+            <div class="form-group">
+                <label asp-for="InviteByEmail"></label>
+                <textarea asp-for="InviteByEmail" class="form-control"></textarea>
+                <span asp-validation-for="InviteByEmail" class="text-danger"></span> @*no validation applied tho*@
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-outline-info p-1" style="width:auto;">Submit Event</button>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts 
+{
+    <environment include="Development">
+        <script src="~/jquery-validate/jquery.validate.js"></script>
+        <script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="~/jquery-validate/jquery.validate.min.js"></script>
+        <script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+    </environment>
+}

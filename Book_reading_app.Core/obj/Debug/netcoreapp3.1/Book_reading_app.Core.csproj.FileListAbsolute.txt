@@ -1,0 +1,10 @@
+C:\Users\harshitbhardwaj\Desktop\Design_Patterns_Assignment\Book_reading_app\Book_reading_app.Core\bin\Debug\netcoreapp3.1\Book_reading_app.Core.deps.json
+C:\Users\harshitbhardwaj\Desktop\Design_Patterns_Assignment\Book_reading_app\Book_reading_app.Core\bin\Debug\netcoreapp3.1\Book_reading_app.Core.dll
+C:\Users\harshitbhardwaj\Desktop\Design_Patterns_Assignment\Book_reading_app\Book_reading_app.Core\bin\Debug\netcoreapp3.1\Book_reading_app.Core.pdb
+C:\Users\harshitbhardwaj\Desktop\Design_Patterns_Assignment\Book_reading_app\Book_reading_app.Core\obj\Debug\netcoreapp3.1\Book_reading_app.Core.csproj.AssemblyReference.cache
+C:\Users\harshitbhardwaj\Desktop\Design_Patterns_Assignment\Book_reading_app\Book_reading_app.Core\obj\Debug\netcoreapp3.1\Book_reading_app.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\harshitbhardwaj\Desktop\Design_Patterns_Assignment\Book_reading_app\Book_reading_app.Core\obj\Debug\netcoreapp3.1\Book_reading_app.Core.AssemblyInfoInputs.cache
+C:\Users\harshitbhardwaj\Desktop\Design_Patterns_Assignment\Book_reading_app\Book_reading_app.Core\obj\Debug\netcoreapp3.1\Book_reading_app.Core.AssemblyInfo.cs
+C:\Users\harshitbhardwaj\Desktop\Design_Patterns_Assignment\Book_reading_app\Book_reading_app.Core\obj\Debug\netcoreapp3.1\Book_reading_app.Core.csproj.CoreCompileInputs.cache
+C:\Users\harshitbhardwaj\Desktop\Design_Patterns_Assignment\Book_reading_app\Book_reading_app.Core\obj\Debug\netcoreapp3.1\Book_reading_app.Core.dll
+C:\Users\harshitbhardwaj\Desktop\Design_Patterns_Assignment\Book_reading_app\Book_reading_app.Core\obj\Debug\netcoreapp3.1\Book_reading_app.Core.pdb

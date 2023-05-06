@@ -1,0 +1,96 @@
+﻿@using Book_reading_app.Core.Domain.Entities;
+@inject SignInManager<ApplicationUser> signInManager;
+@inject UserManager<ApplicationUser> _userManager;
+@{
+    var user = await _userManager.GetUserAsync(User);
+    var userFullName = user != null ? user.FullName : "";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="BookEvent" asp-action="Index"><img src="https://media.glassdoor.com/sqll/240077/nagarro-squarelogo-1598850256158.png" class="rounded-circle" style="width:2.5em;height:auto;" alt="LOGO" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex  text-nowrap">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="BookEvent" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-route="getSupport">Customer-Support</a>
+                        </li>
+
+                        @if (signInManager.IsSignedIn(User))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="BookEvent" asp-action="MyEvents" asp-route-email="@User.Identity.Name">My Events</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="BookEvent" asp-action="EventsInvitedTo" asp-route-email="@User.Identity.Name">Events Invited to</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="BookEvent" asp-action="CreateEvent">Create Event</a>
+                            </li>
+
+
+                        }
+                    </ul>
+                    @if (!signInManager.IsSignedIn(User))
+                    {
+                        
+                            <div class="nav-item mr-sm-2">
+                                <a asp-action="Login" asp-controller="Account" class="nav-link btn btn-outline-dark">Login</a>
+                            </div>
+
+                            <div class="nav-item">
+                                <a asp-action="Register" asp-controller="Account" class="nav-link text-white btn btn-dark ">Register</a>
+                            </div>
+
+                    }
+
+                    @if (signInManager.IsSignedIn(User))
+                    {
+                        <div class="nav-item border rounded shadow-sm d-flex justify-content-center ">
+                            <form method="post" asp-action="Logout" asp-controller="Account">
+                                <button type="submit" class="nav-link btn btn-link text-info">Logout <u class="text-danger">@userFullName</u> (<i>@User.Identity.Name</i>)</button>
+                            </form>
+                        </div>
+                    }
+                </div>
+
+
+
+            </div>
+
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - Book Reading Events App - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @RenderSection("Scripts", required: false)
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

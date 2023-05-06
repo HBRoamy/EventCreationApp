@@ -1,0 +1,43 @@
+﻿@model IEnumerable<BookEventEntity>
+@inject SignInManager<ApplicationUser> _signInManager;
+@inject UserManager<ApplicationUser> _userManager;
+
+@{
+    ViewData["Title"] = "My Events";
+
+    //var user = await _userManager.GetUserAsync(User);
+    //var email = user != null ? user.Email : "";
+}
+
+
+
+@if (Model.Any())
+{
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-sm-12 col-md-8 text-center">
+            <h1>My Events</h1>
+            <div class="list-group">
+                @foreach (var item in Model)
+                {
+                    <div class="list-group-item list-group-item-action">
+                        <a asp-controller="BookEvent" asp-action="EventDetails" asp-route-Id="@item.Id" class="text-info">@item.Title</a>
+                        @if (item.Date > DateTime.Now)
+                        {
+                            <a asp-controller="BookEvent" asp-action="EditEvent" asp-route-Id="@item.Id">
+                                <img src="~/images/editIco.png" height="15" width="15" />
+                            </a>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+}
+else
+{
+
+    <h1 class="display-4">OOPS! It looks like you haven't created any events yet.</h1>
+    <h3>You can create it <a asp-controller="BookEvent" asp-action="CreateEvent">here</a> though.</h3>
+}

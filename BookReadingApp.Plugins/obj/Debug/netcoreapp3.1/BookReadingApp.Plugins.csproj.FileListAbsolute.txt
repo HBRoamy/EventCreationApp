@@ -1,0 +1,10 @@
+C:\Users\harshitbhardwaj\Desktop\Horder\Book_reading_app\BookReadingApp.Plugins\obj\Debug\netcoreapp3.1\BookReadingApp.Plugins.csproj.AssemblyReference.cache
+C:\Users\harshitbhardwaj\Desktop\Horder\Book_reading_app\BookReadingApp.Plugins\obj\Debug\netcoreapp3.1\BookReadingApp.Plugins.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\harshitbhardwaj\Desktop\Horder\Book_reading_app\BookReadingApp.Plugins\obj\Debug\netcoreapp3.1\BookReadingApp.Plugins.AssemblyInfoInputs.cache
+C:\Users\harshitbhardwaj\Desktop\Horder\Book_reading_app\BookReadingApp.Plugins\obj\Debug\netcoreapp3.1\BookReadingApp.Plugins.AssemblyInfo.cs
+C:\Users\harshitbhardwaj\Desktop\Horder\Book_reading_app\BookReadingApp.Plugins\obj\Debug\netcoreapp3.1\BookReadingApp.Plugins.csproj.CoreCompileInputs.cache
+C:\Users\harshitbhardwaj\Desktop\Horder\Book_reading_app\BookReadingApp.Plugins\bin\Debug\netcoreapp3.1\BookReadingApp.Plugins.deps.json
+C:\Users\harshitbhardwaj\Desktop\Horder\Book_reading_app\BookReadingApp.Plugins\bin\Debug\netcoreapp3.1\BookReadingApp.Plugins.dll
+C:\Users\harshitbhardwaj\Desktop\Horder\Book_reading_app\BookReadingApp.Plugins\bin\Debug\netcoreapp3.1\BookReadingApp.Plugins.pdb
+C:\Users\harshitbhardwaj\Desktop\Horder\Book_reading_app\BookReadingApp.Plugins\obj\Debug\netcoreapp3.1\BookReadingApp.Plugins.dll
+C:\Users\harshitbhardwaj\Desktop\Horder\Book_reading_app\BookReadingApp.Plugins\obj\Debug\netcoreapp3.1\BookReadingApp.Plugins.pdb

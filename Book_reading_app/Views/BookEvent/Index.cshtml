@@ -1,0 +1,63 @@
+﻿@model IEnumerable<BookEventEntity>
+@inject UserManager<ApplicationUser> _user;
+
+@{
+    ViewData["Title"] = "Home Page";
+
+    var currentUser = await _user.GetUserAsync(User);
+    var email = currentUser != null ? currentUser.Email : "";
+}
+
+@if (ViewBag.IsSuccess == true)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Alert!</strong> Event deletion successfull.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+<div class="container-fluid">
+    <div class="text-center"><h1 class="display-4 text-center">Book Reading App</h1></div>
+    <br />
+
+
+    <div class="row text-center">
+        <div class="col-md-6 col-sm-12 text-center">
+            <h3 class="text-info">Past Events</h3>
+            <div class="list-group">
+                @* foreach loop for public past events *@
+
+                @foreach (var item in Model)
+                {
+                    if (item.Date <= DateTime.Now)
+                    {
+
+                        <a asp-controller="BookEvent" asp-action="EventDetails" asp-route-id="@item.Id" class="list-group-item list-group-item-action">@item.Title</a>
+
+                    }
+                }
+            </div>
+
+        </div>
+        
+        <div class="col-md-6 col-sm-12 text-center">
+            <h3 class="text-info">Upcoming Events</h3>
+            <div class="list-group">
+                @* foreach loop for public future events *@
+                @foreach (var item in Model)
+                {
+                    if (item.Date > DateTime.Now)
+                    {
+                        <a asp-controller="BookEvent" asp-action="EventDetails" asp-route-id="@item.Id" class="list-group-item list-group-item-action">@item.Title</a>
+                    }
+                }
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+

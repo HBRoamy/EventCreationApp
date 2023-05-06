@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "dgSpecHash": "coX5EjJm00D6t5/FpTFKA3zL/46rssc7dgHyMRf67xE/YwwY/Fg5UNjfjwAXoPpkPdZeEvDtD/wT96Igzm4CKA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\harshitbhardwaj\\Desktop\\Design_Patterns_Assignment\\Book_reading_app\\BookReadingApp.Plugins\\BookReadingApp.Plugins.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\harshitbhardwaj\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "C:\\Users\\harshitbhardwaj\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
+    "C:\\Users\\harshitbhardwaj\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.31\\microsoft.entityframeworkcore.3.1.31.nupkg.sha512",
+    "C:\\Users\\harshitbhardwaj\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.1.31\\microsoft.entityframeworkcore.abstractions.3.1.31.nupkg.sha512",
+    "C:\\Users\\harshitbhardwaj\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.31\\microsoft.entityframeworkcore.analyzers.3.1.31.nupkg.sha512",
+    "C:\\Users\\harshitbhardwaj\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\3.1.31\\microsoft.entityframeworkcore.inmemory.3.1.31.nupkg.sha512",
+    "C:\\Users\\harshitbhardwaj\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.31\\microsoft.entityframeworkcore.relational.3.1.31.nupkg.sha512",
+    "C:\\Users\\harshitbhardwaj\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.31\\microsoft.extensions.caching.abstractions.3.1.31.nupkg.sha512",
+    "C:\\Users\\harshitbhardwaj\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.31\\microsoft.extensions.caching.memory.3.1.31.nupkg.sha512",
+    "C:\\Users\\harshitbhardwaj\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.31\\microsoft.extensions.configuration.3.1.31.nupkg.sha512",
+    "C:\\Users\\harshitbhardwaj\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.31\\microsoft.extensions.configuration.abstractions.3.1.31.nupkg.sha512",
+    "C:\\Users\\harshitbhardwaj\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.31\\microsoft.extensions.configuration.binder.3.1.31.nupkg.sha512",
+    "C:\\Users\\harshitbhardwaj\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.31\\microsoft.extensions.dependencyinjection.3.1.31.nupkg.sha512",
+    "C:\\Users\\harshitbhardwaj\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.31\\microsoft.extensions.dependencyinjection.abstractions.3.1.31.nupkg.sha512",
+    "C:\\Users\\harshitbhardwaj\\.nuget\\packages\\microsoft.extensions.logging\\3.1.31\\microsoft.extensions.logging.3.1.31.nupkg.sha512",
+    "C:\\Users\\harshitbhardwaj\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.31\\microsoft.extensions.logging.abstractions.3.1.31.nupkg.sha512",
+    "C:\\Users\\harshitbhardwaj\\.nuget\\packages\\microsoft.extensions.options\\3.1.31\\microsoft.extensions.options.3.1.31.nupkg.sha512",
+    "C:\\Users\\harshitbhardwaj\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.31\\microsoft.extensions.primitives.3.1.31.nupkg.sha512",
+    "C:\\Users\\harshitbhardwaj\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
+    "C:\\Users\\harshitbhardwaj\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "C:\\Users\\harshitbhardwaj\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
